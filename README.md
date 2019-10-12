@@ -20,7 +20,7 @@ implementation 'me.zhanghai.android.foregroundcompat:library:1.0.0'
 
 ## Usage
 
-See [the list of supported views](library/src/main/java/me/zhanghai/android/foregroundcompat).
+Just use one of the [supported views](library/src/main/java/me/zhanghai/android/foregroundcompat). The [ForegroundCompat](library/src/main/java/me/zhanghai/android/foregroundcompat/ForegroundCompat.java) class can also be used to access foreground related methods in a backward compatible fashion.
 
 ## License
 
