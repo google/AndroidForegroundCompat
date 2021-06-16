@@ -216,6 +216,7 @@ public class ForegroundHelper {
         mForegroundInfo.mDrawable = foreground;
         //mForegroundInfo.mBoundsChanged = true;
         if (foreground != null) {
+            mView.setWillNotDraw(false);
             DrawableCompat.setLayoutDirection(foreground, mView.getLayoutDirection());
             if (foreground.isStateful()) {
                 foreground.setState(mView.getDrawableState());
