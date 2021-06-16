@@ -16,6 +16,7 @@
 
 package me.zhanghai.android.foregroundcompat;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Canvas;
@@ -61,6 +62,7 @@ public class ForegroundHelper {
         mView = view;
     }
 
+    @SuppressLint("RestrictedApi")
     public void init(@NonNull Context context, @Nullable AttributeSet attrs,
                      @AttrRes int defStyleAttr, @StyleRes int defStyleRes) {
 
