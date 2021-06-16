@@ -15,7 +15,7 @@ This library takes the foreground implementation from `FrameLayout` and allows u
 Gradle:
 
 ```gradle
-implementation 'me.zhanghai.android.foregroundcompat:library:1.0.0'
+implementation 'me.zhanghai.android.foregroundcompat:library:1.0.1'
 ```
 
 ## Usage
