@@ -28,6 +28,7 @@ import android.widget.TableRow;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.annotation.RestrictTo;
 
 public class ForegroundTableRow extends TableRow implements ForegroundCompatView {
 
@@ -95,43 +96,51 @@ public class ForegroundTableRow extends TableRow implements ForegroundCompatView
 
     @Nullable
     @Override
+    @RestrictTo(RestrictTo.Scope.LIBRARY)
     public Drawable getSupportForeground() {
         return mForegroundHelper.getSupportForeground();
     }
 
     @Override
+    @RestrictTo(RestrictTo.Scope.LIBRARY)
     public void setSupportForeground(@Nullable Drawable foreground) {
         mForegroundHelper.setSupportForeground(foreground);
     }
 
     @Override
+    @RestrictTo(RestrictTo.Scope.LIBRARY)
     public int getSupportForegroundGravity() {
         return mForegroundHelper.getSupportForegroundGravity();
     }
 
     @Override
+    @RestrictTo(RestrictTo.Scope.LIBRARY)
     public void setSupportForegroundGravity(int gravity) {
         mForegroundHelper.setSupportForegroundGravity(gravity);
     }
 
     @Override
+    @RestrictTo(RestrictTo.Scope.LIBRARY)
     public void setSupportForegroundTintList(@Nullable ColorStateList tint) {
         mForegroundHelper.setSupportForegroundTintList(tint);
     }
 
     @Nullable
     @Override
+    @RestrictTo(RestrictTo.Scope.LIBRARY)
     public ColorStateList getSupportForegroundTintList() {
         return mForegroundHelper.getSupportForegroundTintList();
     }
 
     @Override
+    @RestrictTo(RestrictTo.Scope.LIBRARY)
     public void setSupportForegroundTintMode(@Nullable PorterDuff.Mode tintMode) {
         mForegroundHelper.setSupportForegroundTintMode(tintMode);
     }
 
     @Nullable
     @Override
+    @RestrictTo(RestrictTo.Scope.LIBRARY)
     public PorterDuff.Mode getSupportForegroundTintMode() {
         return mForegroundHelper.getSupportForegroundTintMode();
     }
