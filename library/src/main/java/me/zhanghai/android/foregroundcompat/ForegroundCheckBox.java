@@ -78,7 +78,9 @@ public class ForegroundCheckBox extends AppCompatCheckBox implements ForegroundC
 
     @Override
     public boolean verifyDrawable(@NonNull Drawable who) {
-        return super.verifyDrawable(who) || mForegroundHelper.verifyDrawable(who);
+        return super.verifyDrawable(who)
+                // mForegroundHelper may be null during super constructor invocation.
+                || (mForegroundHelper != null && mForegroundHelper.verifyDrawable(who));
     }
 
     @Override
